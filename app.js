@@ -7,8 +7,7 @@ const logger = require("morgan");
 const expressLayouts = require("express-ejs-layouts");
 
 mongoose.set("strictQuery", false);
-const mongoDB =
-  "mongodb+srv://dementia1349:test123@cluster0.zw0djkv.mongodb.net/?retryWrites=true&w=majority";
+const mongoDB = "connection link here"
 
 async function main() {
   await mongoose.connect(mongoDB);
